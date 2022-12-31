@@ -1,0 +1,20 @@
+[
+    {
+        "name": "hello_schema",
+        "schema": [
+            {
+                "name": "hello",
+                "type": "string"
+            }
+        ]
+    },
+    {
+        "name": "world_schema",
+        "schema": [
+            {
+                "name": "world",
+                "type": "string"
+            }
+        ]
+    }
+]

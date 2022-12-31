@@ -1,0 +1,13 @@
+{
+    "name": "my-api",
+    "schemas": [
+        "hello_schema.json"
+    ],
+    "routes": [
+        {
+            "uri": "/hello",
+            "method": "GET",
+            "schema": "hello_schema"
+        }
+    ]
+}

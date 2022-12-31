@@ -23,11 +23,20 @@ Creates an API based on the specifications in a target JSON file. Communicates w
 // File: hello_schema.json
 [
     {
-        name: "hello_schema",
-        schema: [
+        "name": "hello_schema",
+        "schema": [
             {
-                name: "hello",
-                type: "string",
+                "name": "hello",
+                "type": "string"
+            }
+        ]
+    },
+    {
+        "name": "world_schema",
+        "schema": [
+            {
+                "name": "world",
+                "type": "string"
             }
         ]
     }
