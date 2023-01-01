@@ -7,6 +7,8 @@ name = "apigen-rs"
 version = "0.1.0"
 dependencies = [
  "clap",
+ "config",
+ "datatypes",
  "serde",
  "serde_json",
 ]
@@ -58,6 +60,23 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0d4198f73e42b4936b35b5bb248d81d2b595ecb170da0bac7655c54eedfa8da8"
 dependencies = [
  "os_str_bytes",
+]
+
+[[package]]
+name = "config"
+version = "0.1.0"
+dependencies = [
+ "datatypes",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "datatypes"
+version = "0.1.0"
+dependencies = [
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
