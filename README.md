@@ -2,6 +2,12 @@
 
 Creates an API based on the specifications in a target JSON file. Communicates with MongoDB.
 
+## TO-DO
+-[ ] apirc loader
+-[ ] schema loader
+-[ ] handler factory
+-[ ] endpoint factory
+
 ## Sample config
 
 ```
