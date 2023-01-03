@@ -7,6 +7,7 @@ Creates an API based on the specifications in a target JSON file. Communicates w
 -[ ] schema loader
 -[ ] handler factory
 -[ ] endpoint factory
+-[ ] implement the config argument
 
 ## Sample config
 
