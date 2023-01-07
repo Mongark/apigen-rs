@@ -16,7 +16,7 @@ pub struct SchemaType {
 #[derive(Deserialize)]
 pub struct Schema {
     pub name: String,
-    pub schema: SchemaType
+    pub parts: Vec<SchemaType>,
 }
 
 #[derive(Deserialize)]
