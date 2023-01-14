@@ -4,6 +4,7 @@ Creates an API based on the specifications in a target JSON file. Communicates w
 
 ## Bussiness Rules
 
+
 - [ ] Should create a `Endpoint` from a `EndpointSpec` interface.
 - [ ] An `Endpoint` requires a callback and HTTP request type.
 
@@ -16,10 +17,8 @@ Creates an API based on the specifications in a target JSON file. Communicates w
 
 ## Sample config
 
+apirc.json
 ```json
-{"_Comment_": "File: apirc.json"},
-
-
 {
     "name": "my-api",
     "schemas": [
@@ -33,9 +32,10 @@ Creates an API based on the specifications in a target JSON file. Communicates w
         }
     ]
 },
+```
 
-{"_Comment_": "File: hello_schema.json"},
-
+hello_schema.json
+```json
 [
     {
         "name": "hello_schema",
