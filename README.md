@@ -2,10 +2,20 @@
 
 Creates an API based on the specifications in a target JSON file. Communicates with MongoDB.
 
+## Data Types
+
+```typescript
+interface EndpointSpec<T> {
+    uri: string,
+    type: string,       // GET, POST, UPDATE, etc.
+    model: Model<T>,
+}
+```
+
 ## Bussiness Rules
 
-
-- [ ] Should create a `Endpoint` from a `EndpointSpec` interface.
+Endpoint Generator
+- [ ] `Endpoint` should be created from a `EndpointSpec` interface.
 - [ ] An `Endpoint` requires a callback and HTTP request type.
 
 ## General TO-DO
