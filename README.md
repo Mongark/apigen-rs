@@ -17,7 +17,7 @@ Creates an API based on the specifications in a target JSON file. Communicates w
 ## Sample config
 
 ```json
-{"_Comment_": "// File: apirc.json"},
+{"_Comment_": "File: apirc.json"},
 
 
 {
