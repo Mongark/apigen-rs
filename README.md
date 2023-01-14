@@ -2,32 +2,40 @@
 
 Creates an API based on the specifications in a target JSON file. Communicates with MongoDB.
 
-## TO-DO
--[x] apirc loader
--[ ] schema loader
--[ ] handler factory
--[ ] endpoint factory
--[ ] implement the config argument
+## Bussiness Rules
+
+- [ ] Should create a `Endpoint` from a `EndpointSpec` interface.
+- [ ] An `Endpoint` requires a callback and HTTP request type.
+
+## General TO-DO
+- [x] apirc loader
+- [ ] schema loader
+- [ ] handler factory
+- [ ] endpoint factory
+- [ ] implement the config argument
 
 ## Sample config
 
-```
-// File: apirc.json
+```json
+{"_Comment_": "// File: apirc.json"},
+
+
 {
-    name: "my-api",
-    schemas: [
+    "name": "my-api",
+    "schemas": [
         "hello_schema.json"
     ],
-    routes: [
+    "routes": [
         {
-            uri: "/hello",
-            method: "GET",
-            schema: "hello_schema"
+            "uri": "/hello",
+            "method": "GET",
+            "schema": "hello_schema"
         }
     ]
-}
+},
 
-// File: hello_schema.json
+{"_Comment_": "File: hello_schema.json"},
+
 [
     {
         "name": "hello_schema",
