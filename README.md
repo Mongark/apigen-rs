@@ -4,11 +4,27 @@ Creates an API based on the specifications in a target JSON file. Communicates w
 
 ## Data Types
 
-```typescript
-interface EndpointSpec<T> {
-    uri: string,
-    type: string,       // GET, POST, UPDATE, etc.
-    model: Model<T>,
+Request
+```rust
+struct Request<B, Q> {
+    body: B,
+    query: Q,
+}
+```
+
+Endpoint
+```rust
+// Endpoint Specifications
+struct EndpointSpec<M> {
+    uri:            String,
+    endpoint_type:  String,     // GET, POST, UPDATE, etc.
+    model:          Model<M>,
+}
+
+// Format for the data parameters on a request.
+struct EndpointData<T, D> {
+    request_type: T,
+    request_data: D,
 }
 ```
 
@@ -16,7 +32,7 @@ interface EndpointSpec<T> {
 
 Endpoint Generator
 - [ ] `Endpoint` should be created from a `EndpointSpec` interface.
-- [ ] `Endpoint.send(data)` should run the `Endpoint` callback function.
+- [ ] `Endpoint.send(data: EndpointData)` should run the `Endpoint` callback function.
 
 ## General TO-DO
 - [x] apirc loader
