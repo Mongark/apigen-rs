@@ -16,7 +16,7 @@ interface EndpointSpec<T> {
 
 Endpoint Generator
 - [ ] `Endpoint` should be created from a `EndpointSpec` interface.
-- [ ] An `Endpoint` requires a callback and HTTP request type.
+- [ ] `Endpoint.send(data)` should run the `Endpoint` callback function.
 
 ## General TO-DO
 - [x] apirc loader
